@@ -1,0 +1,138 @@
+Task 7
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+      int input = 5;
+        int i;
+        for(i = input; i>= 0; i--){
+            for(int j = i; j >=0; j--){
+                 System.out.print(" ");
+            }
+            for(int k =1; k<=input - i; k++){
+                 System.out.print("*");
+            }
+            for(int k=1;k<input - i; k++){
+              System.out.print("*");
+            }
+              System.out.print("\n");
+        }
+     
+    }
+}
+
+task 6
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+      //input
+        int x= 2;
+        int n=3;
+        double output;
+        
+        output = Math.pow(x, n);
+        System.out.print("Hasil :"+ output);
+    }
+}
+
+task 5
+
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    static boolean Palindrome(String kata){
+        int left=0;
+        int right=kata.length()-1;
+        //loop
+        while(left<right){
+            if(kata.charAt(left) != kata.charAt(right)){
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+        
+    }
+    public static void main(String args[])
+    {
+        //checker input ouput
+        Scanner input = new Scanner(System.in);
+        String kata = "mister";
+        if(Palindrome(kata)){
+            System.out.print("Palindrome");
+        }else{
+            System.out.print("Bukan Palindrome");
+        }
+    }
+}
+
+task 4
+
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+        //checker input ouput prima
+        int i = 10;
+            if(i % 2 == 0){
+                System.out.print("Bukan Bilangan Prima");
+            }else{
+                System.out.print("Bilangan Prima");
+            }
+        
+    }
+}
+
+Task 3
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       //faktor bilangan algoritma 
+       int bil = 6;
+       //logikan rumus
+        System.out.println("Output :");
+        int tambah=0;
+        for(int i=0; i<=bil; i++){
+            //rumus faktor bilangan berjalan disini
+            tambah++;
+            if(bil % tambah == 0) {
+                //faktor bilangan akan dicetak disini
+                System.out.println(tambah);
+            }
+        }
+        
+    }
+}
+
